@@ -3,7 +3,7 @@ package hw_7.meta_shape;
 import hw_7.geometry.PointVector;
 import hw_7.scene_element.interfaces.Raster;
 import hw_7.scene_element.shape.*;
-
+import hw_7.meta_shape.ShapePrinter;
 public final class SetOfShapes {
     public static void main(String[] args) {
     Shape [] shapes = new Shape[10];
@@ -18,7 +18,7 @@ public final class SetOfShapes {
     shapes[8] = new RegularTrigon("a good triangle");
     shapes[9] = new RegularTrigon("an other triangle");
         for (Shape shape : shapes) {
-            System.out.println("shape.getName() = " + shape.getName());
+            ShapePrinter.printShapeName(shape);
         }
     }
 
